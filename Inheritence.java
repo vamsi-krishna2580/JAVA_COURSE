@@ -62,7 +62,6 @@ public class Inheritence {
     C obj1 = new C(); // calls the constructor of all chain parent class
     obj1.show(); // checks first in present class (method Overriding)
  
-
     }
 
 }
