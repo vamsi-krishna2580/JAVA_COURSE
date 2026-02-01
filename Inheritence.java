@@ -8,7 +8,7 @@ class sci_caluclator extends Caluclator{
         System.out.println("In Sci_caluclator");
     }
     
-    // public int add(int a, int b){     // overides the method add() of parent class
+    // public int add(int a, int b){     // overides the method add() of parent class(method overriding)
     //     return a*10;      // 20
     // }
 
@@ -23,15 +23,24 @@ class A{
     A(){
         System.out.println("In A");
     }
+        public void show(){
+        System.out.println("In show A");
+    }
 }
 class B extends A{
     B(){
         System.out.println("In B");
     }
+    public void show(){
+        System.out.println("In show B");
+    }
 }
 class C extends B{
     C(){
         System.out.println("In C");
+    }
+        public void show(){
+        System.out.println("In show C");
     }
 }
 
@@ -49,6 +58,10 @@ public class Inheritence {
     double r4 = obj.div(8, 9);
     double r5 = obj.pow(8,6);
     System.out.println(r1 + " " + r2 + " " + r3 + " " + r4 + " " + r5);
+
+    C obj1 = new C(); // calls the constructor of all chain parent class
+    obj1.show(); // checks first in present class (method Overriding)
+ 
 
     }
 
