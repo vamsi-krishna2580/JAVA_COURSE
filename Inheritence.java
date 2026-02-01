@@ -29,6 +29,12 @@ class B extends A{
         System.out.println("In B");
     }
 }
+class C extends B{
+    C(){
+        System.out.println("In C");
+    }
+}
+
 
 
 
