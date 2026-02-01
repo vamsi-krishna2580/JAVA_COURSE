@@ -26,6 +26,9 @@ class A{
         public void show(){
         System.out.println("In show A");
     }
+        public void see(){
+            System.out.println("In see A");
+        }
 }
 class B extends A{
     B(){
@@ -33,6 +36,9 @@ class B extends A{
     }
     public void show(){
         System.out.println("In show B");
+    }
+        public void see(){
+        System.out.println("In see B");
     }
 }
 class C extends B{
@@ -43,9 +49,6 @@ class C extends B{
         System.out.println("In show C");
     }
 }
-
-
-
 
 public class Inheritence {
 
@@ -61,7 +64,7 @@ public class Inheritence {
 
     C obj1 = new C(); // calls the constructor of all chain parent class
     obj1.show(); // checks first in present class (method Overriding)
- 
+    obj1.see(); // checks B then goes to A
     }
 
 }
