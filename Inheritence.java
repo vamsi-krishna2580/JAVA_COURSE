@@ -50,6 +50,18 @@ class C extends B{
     }
 }
 
+
+// // Multiple In heritence (Not possible in Java)
+// class Car{
+    
+// }                                
+// class BMW {
+
+// }
+// class Object extends Car, BMW{  //not possible 
+
+// }
+
 public class Inheritence {
 
     public static void main(String[] args) {
@@ -68,3 +80,7 @@ public class Inheritence {
     }
 
 }
+
+
+
+
