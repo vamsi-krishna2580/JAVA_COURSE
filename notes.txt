@@ -1,4 +1,17 @@
-Date 03-02-2026 16;04
+Date 03-02-2026 16:04
 Overriding needs polymorphisim it happens only to methods
 non final, instance methods, can be overidden 
 all inheritables are not eligible for Overriding
+
+Date 03-02-2026 17:56
+when dealing with packages always run from root folder 
+if package is from "package challenges.challenge2.bank.test;"
+then run from "Course"
+Course
+│
+├───challenges
+│   ├───challenge1
+│   │       BaseAccount.java
+│   │       demo.java
+│   │       PremiumSavingsAccount.java
+│   │       SavingsAccount.java
