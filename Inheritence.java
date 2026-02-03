@@ -1,6 +1,6 @@
 // Inheritence simply helps to extend parent class properties to child class
 // Java supports Multilevel Inheitence , doesn't support Multiple inheritence
-
+// static methods , variavles(fields) and private methods and variables(fields) cannot be inheritted
 class sci_caluclator extends Caluclator {
 
     // also calls the constructor of parent class
@@ -25,6 +25,7 @@ class A {
         System.out.println("In A");
     }
 
+    int b = 10;
     public void show() {
         System.out.println("In show A");
     }
@@ -56,7 +57,7 @@ class C extends B {
     C() {
         System.out.println("In C");
     }
-
+    int b = 100;
     public void show() {
         System.out.println("In show C");
     }
@@ -91,7 +92,9 @@ public class Inheritence {
 
     C obj2 = new C();
     // obj2.hello(); // private methods or variables (fields) cannot be inheritted 
+    System.out.println(obj2.b);
     }
+
 
 
 }

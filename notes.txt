@@ -1,0 +1,4 @@
+Date 03-02-2026 16;04
+Overriding needs polymorphisim it happens only to methods
+non final, instance methods, can be overidden 
+all inheritables are not eligible for Overriding
