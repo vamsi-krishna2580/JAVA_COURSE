@@ -1,64 +1,75 @@
 // Inheritence simply helps to extend parent class properties to child class
 // Java supports Multilevel Inheitence , doesn't support Multiple inheritence
 
-class sci_caluclator extends Caluclator{ 
+class sci_caluclator extends Caluclator {
 
     // also calls the constructor of parent class
     public sci_caluclator() {
         System.out.println("In Sci_caluclator");
     }
-    
-    // public int add(int a, int b){     // overides the method add() of parent class(method overriding)
-    //     return a*10;      // 20
+
+    // public int add(int a, int b){ // overides the method add() of parent
+    // class(method overriding)
+    // return a*10; // 20
     // }
 
-    public double  pow(int a, int b){
-        return Math.pow(a, b) ;
+    public double pow(int a, int b) {
+        return Math.pow(a, b);
     }
 }
 
-// Multilevel Inheritence 
+// Multilevel Inheritence
 
-class A{
-    A(){
+class A {
+    A() {
         System.out.println("In A");
     }
-        public void show(){
+
+    public void show() {
         System.out.println("In show A");
     }
-        public void see(){
-            System.out.println("In see A");
-        }
+
+    public void see() {
+        System.out.println("In see A");
+    }
+
+    private void hello() {
+        System.out.println("Hello");
+    }
 }
-class B extends A{
-    B(){
+
+class B extends A {
+    B() {
         System.out.println("In B");
     }
-    public void show(){
+
+    public void show() {
         System.out.println("In show B");
     }
-        public void see(){
+
+    public void see() {
         System.out.println("In see B");
     }
 }
-class C extends B{
-    C(){
+
+class C extends B {
+    C() {
         System.out.println("In C");
     }
-        public void show(){
+
+    public void show() {
         System.out.println("In show C");
     }
 }
 
-
 // // Multiple In heritence (Not possible in Java)
 // class Car{
-    
-// }                                
+
+// }
 // class BMW {
 
 // }
-// class Object extends Car, BMW{  //not possible 
+// class Object extends Car, BMW{ //not possible
 
 // }
 
@@ -77,10 +88,10 @@ public class Inheritence {
     C obj1 = new C(); // calls the constructor of all chain parent class
     obj1.show(); // checks first in present class (method Overriding)
     obj1.see(); // checks B then goes to A
+
+    C obj2 = new C();
+    // obj2.hello(); // private methods or variables (fields) cannot be inheritted 
     }
 
+
 }
-
-
-
-
