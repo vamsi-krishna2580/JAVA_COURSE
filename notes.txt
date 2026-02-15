@@ -21,8 +21,8 @@ Date 08-02-2026 11:14
 abstract word is used in a class when we dont implement that method in class
 public abstract void drive();
  - for abstract method, class must also be abstract class ex:- abstract class car{ }
- - we cannot we object for abstract class , but can create reference to abstract class
+ - we cannot create object for abstract class , but can create reference to abstract class
    but can create object for its child class.
  - the abstract method in a abstract class must be defined in child class
- - There is no compulsory that abstract method should have abstarct class,
+ - There is no compulsory that abstract class should have abstarct method,
    it may have normal methods also
