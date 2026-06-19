@@ -1,3 +1,4 @@
+package Inheritence;
 public class methods {
 
     // static void change(int x) {

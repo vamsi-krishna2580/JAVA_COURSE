@@ -1,3 +1,4 @@
+package Static;
 class mobile { // class is loaded only once
 
     String brand;
