@@ -1,6 +1,4 @@
-import polymorphism.Rectangle;
-import polymorphism.circle;
-import polymorphism.shape;
+package polymorphism;
 
 public class demo {
 

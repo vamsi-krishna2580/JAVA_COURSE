@@ -1,3 +1,4 @@
+package casting;
 public class casting {
     public static void main(String args[]) {
         byte b = 127;

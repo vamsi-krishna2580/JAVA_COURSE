@@ -1,3 +1,4 @@
+package prac;
 class A {
     private String msg;
 

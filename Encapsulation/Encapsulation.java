@@ -1,3 +1,4 @@
+package Encapsulation;
 // Encapsulation is a oops principle to restrict the direct access of data using access modifier(.), ensures data security and integrity
 class Human {
 

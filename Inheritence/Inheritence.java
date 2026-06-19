@@ -1,6 +1,8 @@
+package Inheritence;
 // Inheritence simply helps to extend parent class properties to child class
 // Java supports Multilevel Inheitence , doesn't support Multiple inheritence
-// static methods , variavles(fields) and private methods and variables(fields) cannot be inheritted
+// static methods , static fields,  private methods and private fields cannot be inheritted
+
 class sci_caluclator extends Caluclator {
 
     // also calls the constructor of parent class
