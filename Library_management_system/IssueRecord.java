@@ -2,6 +2,15 @@ public class IssueRecord {
     private int memberId;
     private int itemId;
     private String issueDate;
+    private String returnDate;
+
+    public IssueRecord(int memberId, int itemId, String issueDate) {
+        this.memberId = memberId;
+        this.itemId = itemId;
+        this.issueDate = issueDate;
+        this.returnDate = "Not returned";
+    }
+
 
     public String getReturnDate() {
         return returnDate;
@@ -35,14 +44,6 @@ public class IssueRecord {
         this.memberId = memberId;
     }
 
-    private String returnDate;
-
-    public IssueRecord(int memberId, int itemId, String issueDate) {
-        this.memberId = memberId;
-        this.itemId = itemId;
-        this.issueDate = issueDate;
-        this.returnDate = "Not returned";
-    }
 
     void displayDetails(){
         System.out.println("Member ID :- "+this.getMemberId());

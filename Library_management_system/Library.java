@@ -11,6 +11,7 @@ public class Library {
         this.issuedItems = new ArrayList<>();
     }
 
+    // Items
     public Item searchItem(int itemId) {
         for (Item item : items) {
             if (item.getItemId() == itemId) {
@@ -30,6 +31,23 @@ public class Library {
         }
     }
 
+    void returnItem(int itemId) {
+        Item item = searchItem(itemId);
+        if (item != null) {
+            item.setAvailableStatus(true);
+            for (IssueRecord issueItem : issuedItems) {
+                if (issueItem.getItemId() == itemId) {
+                    issueItem.setReturnDate("21-06-2026");
+                    break;
+                }
+            }
+
+        }else{
+            System.out.println("No such returnable item");
+        }
+    }
+
+    // Members
     void addMember(Member member){
         members.add(member);
     }
@@ -49,22 +67,7 @@ public class Library {
     }
 
 
-    void returnItem(int itemId) {
-        Item item = searchItem(itemId);
-        if (item != null) {
-            item.setAvailableStatus(true);
-            for (IssueRecord issueItem : issuedItems) {
-                if (issueItem.getItemId() == itemId) {
-                    issueItem.setReturnDate("21-06-2026");
-                    break;
-                }
-            }
-
-        }else{
-            System.out.println("No such returnable item");
-        }
-    }
-
+    //IssueRecords
     void displayIssuedItems(){
         for(IssueRecord issuedItem : issuedItems){
             issuedItem.displayDetails();
