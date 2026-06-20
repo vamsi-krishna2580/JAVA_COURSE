@@ -1,4 +1,4 @@
-public class Faculty extends Member{
+public class Faculty extends Member {
     private String Department;
 
     public String getDepartment() {

@@ -18,14 +18,15 @@ public class DVD extends Item {
         Genre = genre;
     }
 
-    DVD(int itemId, String title, int publicationYear, boolean availableStatus, int Duration, String Genre){
+    DVD(int itemId, String title, int publicationYear, boolean availableStatus, int Duration, String Genre) {
         super(itemId, title, publicationYear, availableStatus);
         this.Duration = Duration;
         this.Genre = Genre;
     }
-    void displayDetails(){
+
+    void displayDetails() {
         super.displayDetails();
-        System.out.println("Duration :- "+ this.getDuration());
-        System.out.println("Genre :- "+ this.getGenre());
+        System.out.println("Duration :- " + this.getDuration());
+        System.out.println("Genre :- " + this.getGenre());
     }
 }

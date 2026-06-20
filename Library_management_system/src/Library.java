@@ -21,12 +21,12 @@ public class Library {
         return null;
     }
 
-    void addItem(Item item){
+    void addItem(Item item) {
         items.add(item);
     }
 
-    void displayAllItems(){
-        for (Item item : items){
+    void displayAllItems() {
+        for (Item item : items) {
             item.displayDetails();
         }
     }
@@ -42,24 +42,25 @@ public class Library {
                 }
             }
 
-        }else{
+        } else {
             System.out.println("No such returnable item");
         }
     }
 
     // Members
-    void addMember(Member member){
+    void addMember(Member member) {
         members.add(member);
     }
-    void displayAllMembers(){
-        for (Member member: members){
-            member.dispalyDetails();
+
+    void displayAllMembers() {
+        for (Member member : members) {
+            member.displayDetails();
         }
     }
 
-    Member searchMember(int memberId){
-        for(Member member: members){
-            if (member.getMemberId() == memberId){
+    Member searchMember(int memberId) {
+        for (Member member : members) {
+            if (member.getMemberId() == memberId) {
                 return member;
             }
         }
@@ -68,18 +69,18 @@ public class Library {
 
 
     //IssueRecords
-    void displayIssuedItems(){
-        for(IssueRecord issuedItem : issuedItems){
+    void displayIssuedItems() {
+        for (IssueRecord issuedItem : issuedItems) {
             issuedItem.displayDetails();
         }
     }
 
-    void issueItem(int memberId, int itemId){
+    void issueItem(int memberId, int itemId) {
         Member member = searchMember(memberId);
         Item item = searchItem(itemId);
-        if(member!=null){
-            if(item!=null){
-                if(item.isAvailableStatus() == false){
+        if (member != null) {
+            if (item != null) {
+                if (item.isAvailableStatus() == false) {
                     System.out.println("Item already issued");
                     return;
                 }
@@ -88,11 +89,11 @@ public class Library {
                 issuedItems.add(issueRecord);
                 item.setAvailableStatus(false);
                 System.out.println("Item issued successfully");
-            }else{
+            } else {
                 System.out.println("Item not found");
                 return;
             }
-        }else{
+        } else {
             System.out.println("Member not found");
             return;
         }

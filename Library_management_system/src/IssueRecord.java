@@ -45,11 +45,11 @@ public class IssueRecord {
     }
 
 
-    void displayDetails(){
-        System.out.println("Member ID :- "+this.getMemberId());
-        System.out.println("Item ID :- "+this.getItemId());
-        System.out.println("Issue Date :- "+this.getIssueDate());
-        System.out.println("Return Date :- "+this.getReturnDate());
+    void displayDetails() {
+        System.out.println("Member ID :- " + this.getMemberId());
+        System.out.println("Item ID :- " + this.getItemId());
+        System.out.println("Issue Date :- " + this.getIssueDate());
+        System.out.println("Return Date :- " + this.getReturnDate());
     }
 
 

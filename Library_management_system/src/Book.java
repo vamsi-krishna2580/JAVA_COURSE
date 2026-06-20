@@ -2,17 +2,17 @@ public class Book extends Item {
     private String Author;
     private int ISBN;
     private int no_pages;
-    
-    Book(int itemId, String title, int publicationYear, boolean availableStatus, int ISBN, int no_pages){
-         super(itemId, title, publicationYear, availableStatus);
-         this.ISBN = ISBN;
-         this.no_pages = no_pages;
+
+    Book(int itemId, String title, int publicationYear, boolean availableStatus, int ISBN, int no_pages) {
+        super(itemId, title, publicationYear, availableStatus);
+        this.ISBN = ISBN;
+        this.no_pages = no_pages;
     }
 
-    void displayDetails(){
+    void displayDetails() {
         super.displayDetails();
-        System.out.println("ISBN :- "+ this.getISBN());
-        System.out.println("No_of_pages :- "+ this.getNo_pages());
+        System.out.println("ISBN :- " + this.getISBN());
+        System.out.println("No_of_pages :- " + this.getNo_pages());
     }
 
     public String getAuthor() {
