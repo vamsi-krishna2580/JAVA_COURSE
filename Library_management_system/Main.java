@@ -14,7 +14,21 @@ public class Main {
         lib.addMember(s1);
         lib.addMember(f1);
 
+       // lib.displayAllItems();
+       // lib.displayAllMembers();
+
+        lib.issueItem(101, 101);
+        System.out.println();
+        lib.displayIssuedItems();
+        System.out.println();
         lib.displayAllItems();
-        lib.displayAllMembers();
+        System.out.println();
+        lib.returnItem(101);
+        System.out.println();
+        lib.displayIssuedItems();
+        System.out.println();
+        lib.displayAllItems();
+        System.out.println();
+
     }
 }

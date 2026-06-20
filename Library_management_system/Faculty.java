@@ -14,9 +14,8 @@ public class Faculty extends Member{
         Department = department;
     }
 
-    void dispalyDetails() {
-        System.out.println("MemberId :- " + this.getMemberId());
-        System.out.println("MemberName :- " + this.getMemberName());
+    void displayDetails() {
+        super.displayDetails();
         System.out.println("Department :- " + this.getDepartment());
     }
 }

@@ -14,11 +14,6 @@ class Item{
         this.title = title;
     }
 
-    void addItem(){};
-    void displayAllItems(){};
-    void issueItem(){};
-    void returnItem(){};
-
     void displayDetails(){
         System.out.println("ItemId :- "+ itemId);
         System.out.println("Title :- "+ title);

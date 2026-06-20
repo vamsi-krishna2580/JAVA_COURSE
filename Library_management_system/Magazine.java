@@ -25,10 +25,7 @@ public class Magazine extends Item {
     }
 
     void displayDetails() {
-        System.out.println("ItemId :- " + this.getItemId());
-        System.out.println("Title :- " + this.getTitle());
-        System.out.println("PublicationYear :- " + this.getPublicationYear());
-        System.out.println("AvailableStatus :- " + this.isAvailableStatus());
+        super.displayDetails();
         System.out.println("IssueNumber :- " + this.getIssue_Number());
         System.out.println("Publication_month :- " + this.getPublication_month());
     }

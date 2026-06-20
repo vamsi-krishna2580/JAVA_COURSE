@@ -24,10 +24,7 @@ public class DVD extends Item {
         this.Genre = Genre;
     }
     void displayDetails(){
-        System.out.println("ItemId :- "+ this.getItemId());
-        System.out.println("Title :- "+ this.getTitle());
-        System.out.println("PublicationYear :- "+ this.getPublicationYear());
-        System.out.println("AvailableStatus :- "+ this.isAvailableStatus());
+        super.displayDetails();
         System.out.println("Duration :- "+ this.getDuration());
         System.out.println("Genre :- "+ this.getGenre());
     }

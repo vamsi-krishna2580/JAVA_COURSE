@@ -24,9 +24,8 @@ public class Student extends Member {
         this.batch_no = batch_no;
     }
 
-    void dispalyDetails() {
-        System.out.println("MemberId :- " + this.getMemberId());
-        System.out.println("MemberName :- " + this.getMemberName());
+    void displayDetails() {
+        super.displayDetails();
         System.out.println("Branch :- " + this.getBranch());
         System.out.println("batch_no :- " + this.getBatch_no());
     }

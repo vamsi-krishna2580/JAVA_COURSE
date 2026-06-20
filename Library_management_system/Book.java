@@ -10,10 +10,7 @@ public class Book extends Item {
     }
 
     void displayDetails(){
-        System.out.println("ItemId :- "+ this.getItemId());
-        System.out.println("Title :- "+ this.getTitle());
-        System.out.println("PublicationYear :- "+ this.getPublicationYear());
-        System.out.println("AvailableStatus :- "+ this.isAvailableStatus());
+        super.displayDetails();
         System.out.println("ISBN :- "+ this.getISBN());
         System.out.println("No_of_pages :- "+ this.getNo_pages());
     }

@@ -7,8 +7,7 @@ public class Member {
         MemberName = memberName;
     }
 
-
-    void dispalyDetails(){
+    void displayDetails(){
         System.out.println("MemberId :- "+ this.getMemberId());
         System.out.println("MemberName :- "+ this.getMemberName());
     }
