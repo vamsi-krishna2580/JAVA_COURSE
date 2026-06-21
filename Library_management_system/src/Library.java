@@ -99,4 +99,23 @@ public class Library {
         }
     }
 
+    Item searchItemByTitle(String title) {
+        for (Item item : items) {
+            if (item.getTitle().equalsIgnoreCase(title)) {
+                return item;
+            }
+        }
+        return null;
+    }
+
+    boolean itemExists(int itemId) {
+        return searchItem(itemId) != null;
+    }
+
+    boolean memberExists(int memberId) {
+        return searchMember(memberId) != null;
+    }
+
+
+
 }

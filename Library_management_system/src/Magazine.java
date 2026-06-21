@@ -18,7 +18,7 @@ public class Magazine extends Item {
         this.publication_month = publication_month;
     }
 
-    Magazine(int itemId, String title, int publicationYear, boolean availableStatus, int Issue_number, String publication_month) {
+    Magazine(int itemId, String title, int publicationYear, boolean availableStatus, int Issue_Number, String publication_month) {
         super(itemId, title, publicationYear, availableStatus);
         this.Issue_Number = Issue_Number;
         this.publication_month = publication_month;
@@ -29,4 +29,6 @@ public class Magazine extends Item {
         System.out.println("IssueNumber :- " + this.getIssue_Number());
         System.out.println("Publication_month :- " + this.getPublication_month());
     }
+
+
 }
