@@ -1,7 +1,25 @@
+import java.sql.Connection;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
+
+        try {
+
+            Connection conn =
+                    DBConnection.getConnection();
+
+            System.out.println("Connected Successfully");
+
+            conn.close();
+
+        } catch (Exception e) {
+
+            e.printStackTrace();
+
+        }
+
 
         Scanner sc = new Scanner(System.in);
         Library lib = new Library();

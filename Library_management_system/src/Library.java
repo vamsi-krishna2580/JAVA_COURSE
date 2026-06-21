@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
 public class Library {
-    private ArrayList<Item> items;
-    private ArrayList<Member> members;
-    private ArrayList<IssueRecord> issuedItems;
+    final private ArrayList<Item> items;
+    final private ArrayList<Member> members;
+    final private ArrayList<IssueRecord> issuedItems;
 
     public Library() {
         this.items = new ArrayList<>();
@@ -12,7 +12,7 @@ public class Library {
     }
 
     // Items
-    public Item searchItem(int itemId) {
+    Item searchItem(int itemId) {
         for (Item item : items) {
             if (item.getItemId() == itemId) {
                 return item;
@@ -80,7 +80,7 @@ public class Library {
         Item item = searchItem(itemId);
         if (member != null) {
             if (item != null) {
-                if (item.isAvailableStatus() == false) {
+                if (!item.isAvailableStatus()) {
                     System.out.println("Item already issued");
                     return;
                 }
@@ -91,31 +91,10 @@ public class Library {
                 System.out.println("Item issued successfully");
             } else {
                 System.out.println("Item not found");
-                return;
             }
         } else {
             System.out.println("Member not found");
-            return;
         }
     }
-
-    Item searchItemByTitle(String title) {
-        for (Item item : items) {
-            if (item.getTitle().equalsIgnoreCase(title)) {
-                return item;
-            }
-        }
-        return null;
-    }
-
-    boolean itemExists(int itemId) {
-        return searchItem(itemId) != null;
-    }
-
-    boolean memberExists(int memberId) {
-        return searchMember(memberId) != null;
-    }
-
-
 
 }
