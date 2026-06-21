@@ -1,34 +1,46 @@
+import java.util.Scanner;
+
 public class Main {
-    public static void main(String args[]){
+    public static void main(String args[]) {
 
-        Book book1 = new Book(101, "maths", 2026, true, 12345, 100);
-        DVD dvd1 = new DVD(102,"matsh tutorials", 2025, true, 2, "Education");
-        Student s1 = new Student(101,"Vamsi", "CSE-AI", 2024);
-        Faculty f1 = new Faculty(101, "Krishna", "CSE");
-
-
+        Scanner sc = new Scanner(System.in);
         Library lib = new Library();
-        lib.addItem(book1);
-        lib.addItem(dvd1);
 
-        lib.addMember(s1);
-        lib.addMember(f1);
+        while(true) {
+            System.out.println("====== LIBRARY MENU ======");
+            System.out.println("1. Add Book");
+            System.out.println("2. View Items");
+            System.out.println("3. Exit");
+            System.out.println();
 
-       // lib.displayAllItems();
-       // lib.displayAllMembers();
+            int choice = sc.nextInt();
 
-        lib.issueItem(101, 101);
-        System.out.println();
-        lib.displayIssuedItems();
-        System.out.println();
-        lib.displayAllItems();
-        System.out.println();
-        lib.returnItem(101);
-        System.out.println();
-        lib.displayIssuedItems();
-        System.out.println();
-        lib.displayAllItems();
-        System.out.println();
-
+            switch(choice){
+                case 1:
+                    System.out.println("Enter Item ID: ");
+                    int ItemId = sc.nextInt();
+                    sc.nextLine();
+                    System.out.println("Enter Title: ");
+                    String Title = sc.nextLine();
+                    System.out.println("Enter Publication Year: ");
+                    int year = sc.nextInt();
+                    System.out.println("Enter Availability: ");
+                    boolean avail = sc.nextBoolean();
+                    System.out.println("Enter ISBN: ");
+                    int ISBN = sc.nextInt();
+                    System.out.println("Enter Number of Pages: ");
+                    int no_of = sc.nextInt();
+                    Book b = new Book(ItemId,Title, year, avail, ISBN, no_of);
+                    lib.addItem(b);
+                    System.out.println("Book Added Successfully");
+                    break;
+                case 2:
+                    lib.displayAllItems();
+                    break;
+                case 3:
+                    System.out.println("Thank You");
+                    return;
+            }
+        }
     }
 }
