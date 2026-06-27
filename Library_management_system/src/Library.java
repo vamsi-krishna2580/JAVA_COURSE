@@ -1,3 +1,5 @@
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.util.ArrayList;
 
 public class Library {
@@ -24,6 +26,38 @@ public class Library {
     void addItem(Item item) {
         items.add(item);
     }
+
+//    void addItem(Item item) {
+//        try {
+//            Connection conn =
+//                    DBConnection.getConnection();
+//
+//            String sql =
+//                    "INSERT INTO items VALUES(?,?,?,?,?)";
+//
+//            PreparedStatement ps =
+//                    conn.prepareStatement(sql);
+//
+//            ps.setInt(1, item.getItemId());
+//            ps.setString(2, item.getTitle());
+//            ps.setInt(3, item.getPublicationYear());
+//            ps.setBoolean(4, item.isAvailableStatus());
+//
+//            ps.setString(
+//                    5,
+//                    item.getClass().getSimpleName()
+//            );
+//
+//            ps.executeUpdate();
+//
+//            System.out.println("Inserted Into DB");
+//
+//            conn.close();
+//
+//        } catch(Exception e){
+//            e.printStackTrace();
+//        }
+//    }
 
     void displayAllItems() {
         for (Item item : items) {

@@ -1,0 +1,465 @@
+LIBRARY MANAGEMENT SYSTEM TEST REPORT
+Generated : 2026-06-21 21:49:01.951262
+
+
+================================================================================
+TEST : Add Book
+================================================================================
+INPUT:
+1
+101
+Java Programming
+2024
+true
+123456
+500
+12
+
+
+OUTPUT:
+
+====== LIBRARY MENU ======
+1. Add Book
+2. Add DVD
+3. Add Magazine
+4. View All Items
+5. Add Student
+6. Add Faculty
+7. View Members
+8. Search Item By ID
+9. Issue Item
+10. Return Item
+11. View Issued Items
+12. Exit
+Enter Choice: Enter Item ID: Enter Title: Enter Publication Year: Enter Availability: Enter ISBN: Enter Number Of Pages: Book Added Successfully
+
+====== LIBRARY MENU ======
+1. Add Book
+2. Add DVD
+3. Add Magazine
+4. View All Items
+5. Add Student
+6. Add Faculty
+7. View Members
+8. Search Item By ID
+9. Issue Item
+10. Return Item
+11. View Issued Items
+12. Exit
+Enter Choice: Thank You
+
+
+================================================================================
+TEST : Add DVD
+================================================================================
+INPUT:
+2
+201
+Avengers
+2023
+true
+180
+Action
+12
+
+
+OUTPUT:
+
+====== LIBRARY MENU ======
+1. Add Book
+2. Add DVD
+3. Add Magazine
+4. View All Items
+5. Add Student
+6. Add Faculty
+7. View Members
+8. Search Item By ID
+9. Issue Item
+10. Return Item
+11. View Issued Items
+12. Exit
+Enter Choice: Enter Item ID: Enter Title: Enter Publication Year: Enter Availability: Enter Duration: Enter Genre: DVD Added Successfully
+
+====== LIBRARY MENU ======
+1. Add Book
+2. Add DVD
+3. Add Magazine
+4. View All Items
+5. Add Student
+6. Add Faculty
+7. View Members
+8. Search Item By ID
+9. Issue Item
+10. Return Item
+11. View Issued Items
+12. Exit
+Enter Choice: Thank You
+
+
+================================================================================
+TEST : Add Magazine
+================================================================================
+INPUT:
+3
+301
+Tech Monthly
+2025
+true
+12
+June
+12
+
+
+OUTPUT:
+
+====== LIBRARY MENU ======
+1. Add Book
+2. Add DVD
+3. Add Magazine
+4. View All Items
+5. Add Student
+6. Add Faculty
+7. View Members
+8. Search Item By ID
+9. Issue Item
+10. Return Item
+11. View Issued Items
+12. Exit
+Enter Choice: Enter Item ID: Enter Title: Enter Publication Year: Enter Availability: Enter Issue Number: Enter Publication Month: Magazine Added Successfully
+
+====== LIBRARY MENU ======
+1. Add Book
+2. Add DVD
+3. Add Magazine
+4. View All Items
+5. Add Student
+6. Add Faculty
+7. View Members
+8. Search Item By ID
+9. Issue Item
+10. Return Item
+11. View Issued Items
+12. Exit
+Enter Choice: Thank You
+
+
+================================================================================
+TEST : Add Student
+================================================================================
+INPUT:
+5
+1
+Praveen
+CSE
+2024
+12
+
+
+OUTPUT:
+
+====== LIBRARY MENU ======
+1. Add Book
+2. Add DVD
+3. Add Magazine
+4. View All Items
+5. Add Student
+6. Add Faculty
+7. View Members
+8. Search Item By ID
+9. Issue Item
+10. Return Item
+11. View Issued Items
+12. Exit
+Enter Choice: Enter Member ID: Enter Member Name: Enter Branch: Enter Batch Number: Student Added Successfully
+
+====== LIBRARY MENU ======
+1. Add Book
+2. Add DVD
+3. Add Magazine
+4. View All Items
+5. Add Student
+6. Add Faculty
+7. View Members
+8. Search Item By ID
+9. Issue Item
+10. Return Item
+11. View Issued Items
+12. Exit
+Enter Choice: Thank You
+
+
+================================================================================
+TEST : Add Faculty
+================================================================================
+INPUT:
+6
+100
+Dr Smith
+Computer Science
+12
+
+
+OUTPUT:
+
+====== LIBRARY MENU ======
+1. Add Book
+2. Add DVD
+3. Add Magazine
+4. View All Items
+5. Add Student
+6. Add Faculty
+7. View Members
+8. Search Item By ID
+9. Issue Item
+10. Return Item
+11. View Issued Items
+12. Exit
+Enter Choice: Enter Member ID: Enter Member Name: Enter Department: Faculty Added Successfully
+
+====== LIBRARY MENU ======
+1. Add Book
+2. Add DVD
+3. Add Magazine
+4. View All Items
+5. Add Student
+6. Add Faculty
+7. View Members
+8. Search Item By ID
+9. Issue Item
+10. Return Item
+11. View Issued Items
+12. Exit
+Enter Choice: Thank You
+
+
+================================================================================
+TEST : Search Item
+================================================================================
+INPUT:
+1
+101
+Java
+2024
+true
+12345
+400
+8
+101
+12
+
+
+OUTPUT:
+
+====== LIBRARY MENU ======
+1. Add Book
+2. Add DVD
+3. Add Magazine
+4. View All Items
+5. Add Student
+6. Add Faculty
+7. View Members
+8. Search Item By ID
+9. Issue Item
+10. Return Item
+11. View Issued Items
+12. Exit
+Enter Choice: Enter Item ID: Enter Title: Enter Publication Year: Enter Availability: Enter ISBN: Enter Number Of Pages: Book Added Successfully
+
+====== LIBRARY MENU ======
+1. Add Book
+2. Add DVD
+3. Add Magazine
+4. View All Items
+5. Add Student
+6. Add Faculty
+7. View Members
+8. Search Item By ID
+9. Issue Item
+10. Return Item
+11. View Issued Items
+12. Exit
+Enter Choice: Enter Item ID: ItemId :- 101
+Title :- Java
+PublicationYear :- 2024
+AvailableStatus :- true
+ISBN :- 12345
+No_of_pages :- 400
+
+====== LIBRARY MENU ======
+1. Add Book
+2. Add DVD
+3. Add Magazine
+4. View All Items
+5. Add Student
+6. Add Faculty
+7. View Members
+8. Search Item By ID
+9. Issue Item
+10. Return Item
+11. View Issued Items
+12. Exit
+Enter Choice: Thank You
+
+
+================================================================================
+TEST : Search Missing Item
+================================================================================
+INPUT:
+8
+999
+12
+
+
+OUTPUT:
+
+====== LIBRARY MENU ======
+1. Add Book
+2. Add DVD
+3. Add Magazine
+4. View All Items
+5. Add Student
+6. Add Faculty
+7. View Members
+8. Search Item By ID
+9. Issue Item
+10. Return Item
+11. View Issued Items
+12. Exit
+Enter Choice: Enter Item ID: Item Not Found
+
+====== LIBRARY MENU ======
+1. Add Book
+2. Add DVD
+3. Add Magazine
+4. View All Items
+5. Add Student
+6. Add Faculty
+7. View Members
+8. Search Item By ID
+9. Issue Item
+10. Return Item
+11. View Issued Items
+12. Exit
+Enter Choice: Thank You
+
+
+================================================================================
+TEST : View All Items
+================================================================================
+INPUT:
+4
+12
+
+
+OUTPUT:
+
+====== LIBRARY MENU ======
+1. Add Book
+2. Add DVD
+3. Add Magazine
+4. View All Items
+5. Add Student
+6. Add Faculty
+7. View Members
+8. Search Item By ID
+9. Issue Item
+10. Return Item
+11. View Issued Items
+12. Exit
+Enter Choice: 
+====== LIBRARY MENU ======
+1. Add Book
+2. Add DVD
+3. Add Magazine
+4. View All Items
+5. Add Student
+6. Add Faculty
+7. View Members
+8. Search Item By ID
+9. Issue Item
+10. Return Item
+11. View Issued Items
+12. Exit
+Enter Choice: Thank You
+
+
+================================================================================
+TEST : View Members
+================================================================================
+INPUT:
+7
+12
+
+
+OUTPUT:
+
+====== LIBRARY MENU ======
+1. Add Book
+2. Add DVD
+3. Add Magazine
+4. View All Items
+5. Add Student
+6. Add Faculty
+7. View Members
+8. Search Item By ID
+9. Issue Item
+10. Return Item
+11. View Issued Items
+12. Exit
+Enter Choice: 
+====== LIBRARY MENU ======
+1. Add Book
+2. Add DVD
+3. Add Magazine
+4. View All Items
+5. Add Student
+6. Add Faculty
+7. View Members
+8. Search Item By ID
+9. Issue Item
+10. Return Item
+11. View Issued Items
+12. Exit
+Enter Choice: Thank You
+
+
+================================================================================
+TEST : Invalid Choice
+================================================================================
+INPUT:
+99
+12
+
+
+OUTPUT:
+
+====== LIBRARY MENU ======
+1. Add Book
+2. Add DVD
+3. Add Magazine
+4. View All Items
+5. Add Student
+6. Add Faculty
+7. View Members
+8. Search Item By ID
+9. Issue Item
+10. Return Item
+11. View Issued Items
+12. Exit
+Enter Choice: Invalid Choice
+
+====== LIBRARY MENU ======
+1. Add Book
+2. Add DVD
+3. Add Magazine
+4. View All Items
+5. Add Student
+6. Add Faculty
+7. View Members
+8. Search Item By ID
+9. Issue Item
+10. Return Item
+11. View Issued Items
+12. Exit
+Enter Choice: Thank You
+
